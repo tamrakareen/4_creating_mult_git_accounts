@@ -1,5 +1,5 @@
 # multiple-git-accounts
-Setting up Multiple git accounts. There were several articles and a few youtube videos on how to do this.  They were not great for beginners. This is the fast and dirty of what I did, but I plan to make this more robust and for beginners. There was quite a bit of troubleshooting. If this does not work for you, keep at it and remember that the more it doesn't work, the more you learn and the faster you'll be getting around in the terminal! :)   
+Setting up multiple git accounts. There were several articles and a few youtube videos on how to do this.  They were not great for beginners. This is the fast and dirty of what I did, but I plan to make this more robust and for beginners. There was quite a bit of troubleshooting. If this does not work for you, keep at it and remember that the more it doesn't work, the more you learn and the faster you'll be getting around in the terminal! :)   
 
 You'll need to set up your SSH keys (in the terminal prefered), set up two and name them for the different accounts. You can have more than two, just give them all uniquw host names and create as many ssh keys as you need.  I called mine _github and _gitlab.  Vim your .ssh config file and modify the following code:
 
