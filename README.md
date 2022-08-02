@@ -3,23 +3,23 @@ Setting up Multiple git accounts. There were several articles and a few youtube 
 
 You'll need to set up your SSH keys (in the terminal prefered), set up two and name them for the different accounts. You can have more than two, just give them all uniquw host names and create as many ssh keys as you need.  I called mine _github and _gitlab.  Vim your .ssh config file and modify the following code:
 
-#Personal account (github)
-Host github
-        Hostname github.com
-        User git
-        IdentityFile ~/.ssh/id_rsa_github
-        IdentitiesOnly yes
-        AddKeysToAgent yes
+        #Personal account (github)
+        Host github
+                Hostname github.com
+                User git
+                IdentityFile ~/.ssh/id_rsa_github
+                IdentitiesOnly yes
+                AddKeysToAgent yes
 
-#Work account (gitlab)
-Host gitlab
-        Hostname gitlab.com
-        User git
-        IdentityFile ~/.ssh/id_rsa_gitlab
-        HostkeyAlgorithms +ssh-rsa
-        PubkeyAcceptedAlgorithms +ssh-rsa
-        IdentitiesOnly yes
-        AddKeysToAgent yes
+        #Work account (gitlab)
+        Host gitlab
+                Hostname gitlab.com
+                User git
+                IdentityFile ~/.ssh/id_rsa_gitlab
+                HostkeyAlgorithms +ssh-rsa
+                PubkeyAcceptedAlgorithms +ssh-rsa
+                IdentitiesOnly yes
+                AddKeysToAgent yes
         
         
 I had issues connecting my gitlab, so I added the following to the .ssh config and it worked.
