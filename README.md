@@ -28,6 +28,16 @@ I had issues connecting my gitlab, so I added the following to the .ssh config a
         PubkeyAcceptedAlgorithms +ssh-rsa
         
  Now go into your github and gitlab (or whatever accounts you are using) and copy your public ssh (not your private ssh which is much longer) into your account.
- Now test them out in the terminal: ssh -T Hostname (my host names were github and gitlab). Your terminal should say you connected with your username. If it failed, try typing: ssh -Tvv Hostname. It will give you more information on why it failed. 
+ Now test them out in the terminal: 
+ 
+        ssh -T Hostname 
+        
+ (my host names were github and gitlab). Your terminal should say you connected with your username. 
+ 
+ If it failed, try typing: 
+        
+        ssh -Tvv Hostname 
+        
+ It will give you more information on why it failed. 
  
  Once you have all your accounts connected, move on to your .gitconfig files. To be Continued
